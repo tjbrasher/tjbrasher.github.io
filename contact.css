@@ -1,0 +1,95 @@
+@import url("main.css");
+
+  .icons {
+      float: left;
+      padding-left: 30px;
+      padding-top: 30px;
+  }
+  
+  .email_icon {
+      padding-bottom: 15px;
+  }
+
+  .phone_icon {
+      padding-bottom: 15px;
+      padding-left: 12px;
+  }
+
+  .github_icon {
+      padding-bottom: 15px;
+      padding-left: 12px;
+  }
+
+  .linkedin_icon {
+      padding-left: 12px;
+  }
+
+  img.email {
+      max-width:48px; 
+      max-height: 34px; 
+  }
+
+  img.phone {
+      max-width: 36px;
+      max-height: 36px;
+  }
+
+  img.github {
+      max-width: 36px;
+      max-height: 36px;
+  }
+
+  img.linkedin {
+      max-width: 38px;
+      max-height: 38px;
+  }
+
+  .contact_info {
+      float: left;
+      padding-left: 25px;
+      padding-top: 36px;
+      color: white;
+      font-size: 18px;
+  }
+
+  .email_info a {
+      color: white;
+      text-decoration: none;
+  }
+
+  .email_info a:hover {
+      color: #04AA6D;
+      text-decoration: underline;
+  }
+
+  .phone_num {
+      margin-top: 34px;
+  }
+  
+  .github_info {
+      margin-top: 34px;
+  }
+
+  .github_info a {
+      color: white;
+      text-decoration: none;
+  }
+
+  .github_info a:hover {
+      color: #04AA6D;
+      text-decoration: underline;
+  }
+
+  .linkedin_info {
+      margin-top: 34px;
+  }
+  
+  .linkedin_info a {
+      color: white;
+      text-decoration: none;
+  }
+
+  .linkedin_info a:hover{
+      color: #04AA6D;
+      text-decoration: underline;
+  }
