@@ -1,1 +1,3 @@
-$( "#result" ).get( "index.html" );
+$(function() {
+    $("#header").load("index.html");     
+});
