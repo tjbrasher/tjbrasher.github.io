@@ -106,3 +106,26 @@
     padding-top: 5px;
     margin-left: -20px;
 }
+
+#project_lead_title {
+    float: left;
+    font-size: 18px;
+    font-style: italic;
+    padding-top: 5px;
+}
+
+#project_lead_date {
+    float: right;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-right: 15px;
+}
+
+#project_lead_desc {
+    clear: both;
+    color: white;
+    list-style-type: disc;
+    font-size: 16px;
+    padding-top: 5px;
+    margin-left: -20px;
+}
