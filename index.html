@@ -11,6 +11,11 @@
     <h1>Travis Brasher</h1>
 </body>
     <script src="app.js"></script>
+    <script>
+        $("#navbar a").click(function() {
+    $(this).parent().addClass('active').siblings().removeClass('active');
+});
+    </script>
     <noscript>JavaScript must be enabled to use all of the features of the site.</noscript>
 
 <div class="navbar">

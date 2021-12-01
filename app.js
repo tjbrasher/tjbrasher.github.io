@@ -1,18 +1,11 @@
 'use strict'
 
-const switcher = document.querySelector('.btn');
 
-switcher.addEventListener('click', function() {
-    document.body.classList.toggle('dark-theme')
+var _urlpath = $(location).attr('pathname').split('/').pop();
 
-    var className = document.body.className;
-    if(className == "light-theme"){
-        this.textContent = "Dark";
-    }
-    else {
-        this.textContent = "Light";
-    }
-
-    console.log('current class name: ' + className);
-});
+    $('#menu > li').each(function(){
+        var _this = $(this);
+        var _str = _this.find('a').attr('href');
+        _str !== _urlpath ? _this.removeClass('active') : _this.addClass('active');
+    });
 
