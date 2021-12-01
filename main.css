@@ -46,7 +46,7 @@ h1 {
   }
   
   /* Add a color to the active/current link */
-  .navbar > .active > a{
+  .navbar > a:active {
     background-color: #2e2e2e;
     color:#04AA6D;
     border-top-left-radius: 10px;
