@@ -1,16 +1,16 @@
 'use strict'
 
+$(function() {
+    // this will get the full URL at the address bar
+    var url = window.location.href;
 
-$(function(){
-    $('a[href*="#"]').on('click', function(e) {
-        e.preventDefault()
+    // passes on every "a" tag
+    $(".topmenu a").each(function() {
+        // checks if its the same on the address bar
+        if (url == (this.href)) {
+            $(this).closest("li").addClass("active");
+            //for making parent of submenu active
+            $(this).closest("li").parent().parent().addClass("active");
+        }
     });
-
-oldObjChild=$('.active > a'); //gets active nav-item child nav-link
-oldObj = $('.active'); //gets the active nav-item
-oldObj.removeClass('active'); //remove active from old nav-item
-oldObjChild.css('background-color','transparent'); //clear old active nav-item and nav-link style for color
-$(this).parent().addClass('active'); //set the active class on the nav-item that called the function
-$(this).css('color','#04AA6D'); //set active link color to green
-
-});
+});        
