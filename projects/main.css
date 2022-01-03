@@ -102,10 +102,13 @@ h1 {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     z-index: 1;
+    max-width: 268px;
   }
   
   /* Links inside the dropdown */
   .dropdown-content a {
+    word-wrap: break-word;
+    white-space: normal;
     float: none;
     color: black;
     padding: 12px 16px;
