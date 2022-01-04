@@ -25,3 +25,7 @@ function includeHTML() {
     }
   }
 }
+
+if (window.location = "https://tjbrasher.github.io") {
+  window.location = "https://tjbrasher.github.io/about_me";
+}
