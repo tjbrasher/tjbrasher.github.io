@@ -133,3 +133,65 @@ h1 {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    100% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 0, 100%);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+.m-header {
+  animation-name: fadeInDown;
+}
+
+.m-navbar {
+  animation-name: fadeInLeft;
+}
+
+.m-header.is-exiting {
+    animation-direction: alternate-reverse;
+}
+.m-navbar.is-exiting {
+    animation-direction: alternate-reverse;
+}
+
