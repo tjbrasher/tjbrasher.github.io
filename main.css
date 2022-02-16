@@ -185,7 +185,7 @@ h1 {
 }
 
 .navbar {
-  animation-name: fadeInLeft;
+  animation-name: fadeInDown;
 }
 
 .header1.is-exiting {

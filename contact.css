@@ -95,7 +95,7 @@
   }
 
   .contact {
-    animation-name: fadeInUp;
+    animation-name: fadeInLeft;
   }
   
   .contact.is-exiting {
