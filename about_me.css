@@ -6,10 +6,10 @@
     padding-left: 30px;
 }
 
-.m-heading {
+.section_heading {
     animation-name: fadeInUp;
   }
   
-  .m-heading.is-exiting {
+  .section_heading.is-exiting {
       animation-direction: alternate-reverse;
   }

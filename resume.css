@@ -131,10 +131,10 @@
     margin-left: 20px;
 }
 
-.m-resume {
+.resume_body {
     animation-name: fadeInUp;
   }
   
-  .m-resume.is-exiting {
+  .resume_body.is-exiting {
       animation-direction: alternate-reverse;
   }

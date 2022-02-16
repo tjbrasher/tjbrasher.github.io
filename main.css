@@ -180,18 +180,18 @@ h1 {
     }
   }
   
-.m-header {
+.header {
   animation-name: fadeInDown;
 }
 
-.m-navbar {
+.navbar {
   animation-name: fadeInLeft;
 }
 
-.m-header.is-exiting {
+.header1.is-exiting {
     animation-direction: alternate-reverse;
 }
-.m-navbar.is-exiting {
+.navbar.is-exiting {
     animation-direction: alternate-reverse;
 }
 
