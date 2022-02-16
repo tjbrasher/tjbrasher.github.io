@@ -130,17 +130,3 @@
     float: left;
     margin-left: 20px;
 }
-
-.resume_body {
-    animation-duration: 0.25s;
-    transition-timing-function: ease-in;
-    animation-fill-mode: both;
-    animation-name: fadeInUp;
-  }
-  
-  .resume_body.is-exiting {
-    animation-duration: 0.25s;
-    transition-timing-function: ease-in;
-    animation-fill-mode: both;
-    animation-direction: alternate-reverse;
-  }

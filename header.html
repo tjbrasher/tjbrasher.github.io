@@ -7,33 +7,46 @@
     <title>Travis Brasher</title>
     <link rel="stylesheet" href="main.css">
 </head>
-<body>
-    <div class="header1" >
-        <h1>Travis Brasher</h1>
-    </div>
-    <div class="m-header head_element head_element--fadeindown"></div>
-</body>
-    <script src="app.js"></script>
-    <noscript>JavaScript must be enabled to use all of the features of the site.</noscript>
 
-<div class="navbar" id="main">
-    <div class="m-navbar nav_element nav_element--fadeinleft"></div>
-    <a href="/about_me" href=about_me.html >About Me</a>
-    <div class="dropdown">
-        <button class="dropbtn">Portfolio Projects</button>
-        <div class="dropdown-content">
-            <a href="/projects/data_t&m" href=data_t&m.html >Data Transformation & Manipulation</a>
-            <a href="/projects/data_vis" href=data_vis.html >Data Visualization</a>
-            <a href="/projects/programming" href=programming.html >Programming</a>
-            <a href="/projects/diagrams" href=diagrams.html >Diagrams</a>
-        </div>
-        <style>
-            dropdown-content {
-                font-weight: bold;
-            }
-        </style>
+<script src="app.js"></script>
+<noscript>JavaScript must be enabled to use all of the features of the site.</noscript>
+<script src="jQuery.js"></script>
+
+<div id="main" class="m-scene">
+    <div class="scene_element scene_element--fadeInDown">
+        <body>
+            <div class="header1" >
+                <h1>Travis Brasher</h1>
+            </div>
+            <div class="m-header head_element head_element--fadeindown"></div>
+        </body>
     </div>
-    <a href="/resume" href=resume.html >Resume</a>
-    <a href="/contact" href=contact.html >Contact</a>
+
+    <div class="scene_element scene_element--fadeInRight">
+        <div class="navbar" id="main">
+            <div class="m-navbar nav_element nav_element--fadeinleft"></div>
+            <a href="/about_me" href=about_me.html >About Me</a>
+            <div class="dropdown">
+                <button class="dropbtn">Portfolio Projects</button>
+                <div class="dropdown-content">
+                    <a href="/projects/data_t&m" href=data_t&m.html >Data Transformation & Manipulation</a>
+                    <a href="/projects/data_vis" href=data_vis.html >Data Visualization</a>
+                    <a href="/projects/programming" href=programming.html >Programming</a>
+                    <a href="/projects/diagrams" href=diagrams.html >Diagrams</a>
+                </div>
+                <style>
+                    dropdown-content {
+                        font-weight: bold;
+                    }
+                </style>
+            </div>
+            <a href="/resume" href=resume.html >Resume</a>
+            <a href="/contact" href=contact.html >Contact</a>
+
+        </div>
+
+    </div>
+
 </div>
+
 </html>

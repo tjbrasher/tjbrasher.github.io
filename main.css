@@ -151,7 +151,7 @@ h1 {
     }
   
     100% {
-      opacity: 0;
+      opacity: 1;
       transform: translate3d(0, 100%, 0);
     }
   }
@@ -160,6 +160,18 @@ h1 {
     0% {
       opacity: 0;
       transform: translate3d(0, 100%, 0);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translate3d(100%, 0, 0);
     }
   
     100% {
@@ -181,30 +193,34 @@ h1 {
   }
  
   
-.header {
+.m-scene .scene_element {
   animation-duration: 0.25s;
   transition-timing-function: ease-in;
   animation-fill-mode: both;
   animation-name: fadeInDown;
 }
 
-.navbar {
-  animation-duration: 0.25s;
-  transition-timing-function: ease-in;
-  animation-fill-mode: both;
+.m-scene .scene_element--fadeInDown {
   animation-name: fadeInDown;
 }
 
-.header1.is-exiting {
+.m-scene .scene_element--fadeInUp {
+  animation-name: fadeInUp
+}
+
+.m-scene .scene_element--fadeInRight {
+  animation-name: fadeInRight
+}
+
+.m-scene .scene_element--fadeInLeft {
+  animation-name: fadeInLeft
+}
+
+.scene_element.is-exiting {
   animation-duration: 0.25s;
   transition-timing-function: ease-in;
   animation-fill-mode: both;
   animation-direction: alternate-reverse;
 }
-.navbar.is-exiting {
-  animation-duration: 0.25s;
-  transition-timing-function: ease-in;
-  animation-fill-mode: both;
-  animation-direction: alternate-reverse;
-}
+
 
