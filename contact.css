@@ -95,9 +95,15 @@
   }
 
   .contact {
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
     animation-name: fadeInLeft;
   }
   
   .contact.is-exiting {
-      animation-direction: alternate-reverse;
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-direction: alternate-reverse;
   }

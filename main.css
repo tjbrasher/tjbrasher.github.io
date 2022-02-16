@@ -179,19 +179,32 @@ h1 {
       transform: none;
     }
   }
+ 
   
 .header {
+  animation-duration: 0.25s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
   animation-name: fadeInDown;
 }
 
 .navbar {
+  animation-duration: 0.25s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
   animation-name: fadeInDown;
 }
 
 .header1.is-exiting {
-    animation-direction: alternate-reverse;
+  animation-duration: 0.25s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-direction: alternate-reverse;
 }
 .navbar.is-exiting {
-    animation-direction: alternate-reverse;
+  animation-duration: 0.25s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-direction: alternate-reverse;
 }
 

@@ -7,9 +7,15 @@
 }
 
 .section_heading {
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
     animation-name: fadeInUp;
   }
   
   .section_heading.is-exiting {
-      animation-direction: alternate-reverse;
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-direction: alternate-reverse;
   }

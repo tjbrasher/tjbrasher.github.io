@@ -132,9 +132,15 @@
 }
 
 .resume_body {
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
     animation-name: fadeInUp;
   }
   
   .resume_body.is-exiting {
-      animation-direction: alternate-reverse;
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-direction: alternate-reverse;
   }
