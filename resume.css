@@ -130,3 +130,11 @@
     float: left;
     margin-left: 20px;
 }
+
+.m-resume {
+    animation-name: fadeInUp;
+  }
+  
+  .m-resume.is-exiting {
+      animation-direction: alternate-reverse;
+  }

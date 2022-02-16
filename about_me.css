@@ -5,3 +5,11 @@
     color: white;
     padding-left: 30px;
 }
+
+.m-heading {
+    animation-name: fadeInUp;
+  }
+  
+  .m-heading.is-exiting {
+      animation-direction: alternate-reverse;
+  }

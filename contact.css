@@ -93,3 +93,11 @@
       color: #04AA6D;
       text-decoration: underline;
   }
+
+  .m-icons {
+    animation-name: fadeInUp;
+  }
+  
+  .m-icons.is-exiting {
+      animation-direction: alternate-reverse;
+  }
