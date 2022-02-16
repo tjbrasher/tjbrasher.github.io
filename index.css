@@ -1,0 +1,7 @@
+@import url("main.css");
+
+.section_title {
+    font-weight: bold;
+    color: white;
+    padding-left: 30px;
+}
