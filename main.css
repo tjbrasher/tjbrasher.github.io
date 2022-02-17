@@ -197,7 +197,7 @@ h1 {
     transition-timing-function: ease-in;
     animation-fill-mode: both;
   }
-  
+
   body.m-scene .scene_element--fadeInDown {
     animation-name: fadeInDown;
   }
@@ -220,7 +220,7 @@ h1 {
     animation-fill-mode: both;
     animation-direction: alternate-reverse;
   }
-  
+
 
 
 
