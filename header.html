@@ -9,6 +9,9 @@
 </head>
 <body>
 
+    <script src="app.js"></script>
+    <noscript>JavaScript must be enabled to use all of the features of the site.</noscript>
+    <script src="jQuery.js"></script>
 
     <div id="main" class="m-scene">
         <div class="scene_element scene_element--fadeInDown">
@@ -42,22 +45,6 @@
         </div>
     </div>
 
-    <script src="app.js"></script>
-    <noscript>JavaScript must be enabled to use all of the features of the site.</noscript>
-    <script src="jQuery.js"></script>
-    <script type="text/javascript">
-        $('navbar').on('click', function(e){
-            e.preventDefault();
-            console.log('test');
-
-            $.get(this.href, function(data){
-                $('#content').html(data);
-                console.log(this);
-                history.pushState({foo:"navbar"}, this.href, this.html);
-            });
-
-        });
-    </script>
 </body>        
 
 </html>
