@@ -61,4 +61,3 @@ function includeHTML() {
         }
       }).data('smoothState');
 })(jQuery);
-
