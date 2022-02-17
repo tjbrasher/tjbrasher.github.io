@@ -192,34 +192,35 @@ h1 {
     }
   }
  
+  body.m-scene .scene_element--fadeIn {
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+  }
   
-.m-scene .scene_element--fadeIn {
-  animation-duration: 0.25s;
-  transition-timing-function: ease-in;
-  animation-fill-mode: both;
-}
+  body.m-scene .scene_element--fadeInDown {
+    animation-name: fadeInDown;
+  }
+  
+  body.m-scene .scene_element--fadeInUp {
+    animation-name: fadeInUp
+  }
+  
+  body.m-scene .scene_element--fadeInRight {
+    animation-name: fadeInRight
+  }
+  
+  body.m-scene .scene_element--fadeInLeft {
+    animation-name: fadeInLeft
+  }
+  
+  body.scene_element.is-exiting {
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-direction: alternate-reverse;
+  }
+  
 
-.m-scene .scene_element--fadeInDown {
-  animation-name: fadeInDown;
-}
-
-.m-scene .scene_element--fadeInUp {
-  animation-name: fadeInUp
-}
-
-.m-scene .scene_element--fadeInRight {
-  animation-name: fadeInRight
-}
-
-.m-scene .scene_element--fadeInLeft {
-  animation-name: fadeInLeft
-}
-
-.scene_element.is-exiting {
-  animation-duration: 0.25s;
-  transition-timing-function: ease-in;
-  animation-fill-mode: both;
-  animation-direction: alternate-reverse;
-}
 
 
