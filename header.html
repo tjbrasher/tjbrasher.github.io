@@ -11,20 +11,32 @@
 <script src="app.js"></script>
 <noscript>JavaScript must be enabled to use all of the features of the site.</noscript>
 <script src="jQuery.js"></script>
+<script type="text/javascript">
+    $('navbar').on('click', function(e){
+        e.preventDefault();
+        console.log('test');
+
+        $.get(this.href, function(data){
+            $('#content').html(data);
+            console.log(this);
+            history.pushState({foo:"navbar"}, this.href, this.html);
+        });
+
+    });
+    </script>
+
 
 <div id="main" class="m-scene">
-    <div class="scene_element scene_element--fadeIn">
+    <div class="scene_element scene_element--fadeInDown">
         <body>
             <div class="header1" >
                 <h1>Travis Brasher</h1>
             </div>
-            <div class="m-header head_element head_element--fadeindown"></div>
         </body>
     </div>
 
     <div class="scene_element scene_element--fadeInRight">
-        <div class="navbar" id="main">
-            <div class="m-navbar nav_element nav_element--fadeinleft"></div>
+        <div class="navbar">
             <a href="/about_me" href=about_me.html >About Me</a>
             <div class="dropdown">
                 <button class="dropbtn">Portfolio Projects</button>

@@ -171,7 +171,7 @@ h1 {
   @keyframes fadeInRight {
     0% {
       opacity: 0;
-      transform: translate3d(100%, 0, 0%);
+      transform: translate3d(100%, 0, 0);
     }
   
     100% {
@@ -183,7 +183,7 @@ h1 {
   @keyframes fadeInLeft {
     0% {
       opacity: 0;
-      transform: translate3d(-100%, 0, 100%);
+      transform: translate3d(-100%, 0, 0);
     }
   
     100% {
@@ -193,11 +193,10 @@ h1 {
   }
  
   
-.m-scene .scene_element {
+.m-scene .scene_element--fadeIn {
   animation-duration: 0.25s;
   transition-timing-function: ease-in;
   animation-fill-mode: both;
-  animation-name: fadeInDown;
 }
 
 .m-scene .scene_element--fadeInDown {
