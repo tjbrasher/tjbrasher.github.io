@@ -28,3 +28,41 @@
 </script>
 
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Travis Brasher</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <<div include-html="header.html"></div>>
+    </header>
+
+    <div id="content">
+        <a ref="/about_me" href=about_me.html></a>
+    </div>
+
+    <script src="app.js"></script>
+    <noscript>JavaScript must be enabled to use all of the features of the site.</noscript>
+    <script src="jQuery.js"></script>
+    <script type="text/javascript">
+        $('navbar').on('click', function(e){
+            e.preventDefault();
+            console.log('test');
+    
+            $.get(this.href, function(data){
+                $('#content').html(data);
+                console.log(this);
+                history.pushState({foo:'bar'}, this.href, this.html);
+            });
+        });
+    </script>
+</body>
+</html>
