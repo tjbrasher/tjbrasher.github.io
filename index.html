@@ -7,35 +7,23 @@
     <meta http-equiv = "refresh" content = "0; 
     url = https://tjbrasher.github.io/about_me" />
     <title>Travis Brasher</title>
-    <link rel="stylesheet" href="index.css">
-</head>    
+    <link rel="stylesheet" href="index.css">    
+    <div include-html="header.html"></div>
 
-<div include-html="header.html"></div>
+    <script src="app.js" async></script>
+    <noscript>JavaScript must be enabled to use all of the features of the site.</noscript>
+    <script src="jQuery.js"async></script> 
+
+    <script>
+        includeHTML();
+    </script>
+
+</head>
 
 <section class="section_heading">
     <h2 class="section_title">
         Your page will redirect soon
     </h2>    
 </section>
-
-<script src="app.js"></script>
-<noscript>JavaScript must be enabled to use all of the features of the site.</noscript>
-<script src="jQuery.js"></script>
-<script type="text/javascript">
-    $('navbar').on('click', function(e){
-        e.preventDefault();
-        console.log('test');
-
-        $.get(this.href, function(data){
-            $('#content').html(data);
-            console.log(this);
-            history.pushState({foo:'bar'}, this.href, this.html);
-        });
-    });
-</script>
-
-<script>
-    includeHTML();
-</script>
 
 </html>
