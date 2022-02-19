@@ -192,29 +192,29 @@ h1 {
     }
   }
  
-  body.m-scene .scene_element--fadeIn {
+  #main.m-scene .scene_element--fadeIn {
     animation-duration: 0.25s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
   }
 
-  body.m-scene .scene_element--fadeInDown {
+  #main.m-scene .scene_element--fadeInDown {
     animation-name: fadeInDown;
   }
   
-  body.m-scene .scene_element--fadeInUp {
+  #main.m-scene .scene_element--fadeInUp {
     animation-name: fadeInUp
   }
   
-  body.m-scene .scene_element--fadeInRight {
+  #main.m-scene .scene_element--fadeInRight {
     animation-name: fadeInRight
   }
   
-  body.m-scene .scene_element--fadeInLeft {
+  #main.m-scene .scene_element--fadeInLeft {
     animation-name: fadeInLeft
   }
   
-  body.scene_element.is-exiting {
+  #main.m-scene .scene_element.is-exiting {
     animation-duration: 0.25s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
