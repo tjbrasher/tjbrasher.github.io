@@ -200,18 +200,26 @@ h1 {
 
   #main .scene_element--fadeInDown {
     animation-name: fadeInDown;
+    transition-timing-function: ease-in;
+    animation-duration:0.25s;
   }
   
   #main .scene_element--fadeInUp {
-    animation-name: fadeInUp
+    animation-name: fadeInUp;
+    transition-timing-function: ease-in;
+    animation-duration:0.25s;
   }
   
   #main .scene_element--fadeInRight {
-    animation-name: fadeInRight
+    animation-name: fadeInRight;
+    transition-timing-function: ease-in;
+    animation-duration: 0.25s;
   }
   
   #main .scene_element--fadeInLeft {
-    animation-name: fadeInLeft
+    animation-name: fadeInLeft;
+    transition-timing-function: ease-in;
+    animation-duration:0.25s;
   }
   
   #main .scene_element.is-exiting {
