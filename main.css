@@ -84,8 +84,43 @@ h1 {
     /*border-width:fit-content;*/
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
+   } 
+
+   .tooltip {
+     position: relative;
+     display: inline-block;
+   }
+
+   .tooltip .tooltiptext {
+     visibility: hidden;
+     width: auto;
+     bottom: 100%;
+     left: 50%;
+     margin-left:50%;
+     background-color: white;
+     color: black;
+     text-align: center;
+     padding: 5px 0;
+     border-radius: 5px;
+     position: absolute;
+     z-index: 1;
+   }
+
+   .tooltip:hover .tooltiptext {
+     visibility: visible;
    }
   
+   .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+
   /* Add a green background color to navbar links on hover */
   .navbar a:hover {
     background-color: #04AA6D;
