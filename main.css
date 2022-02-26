@@ -19,6 +19,7 @@ h1 {
     margin-top: -15px;
     overflow: hidden;
     border-bottom: solid #292929;
+    border-top: fit-content;
   }
   
   /* Style the links inside the navigation bar */
@@ -73,18 +74,40 @@ h1 {
     margin: 0; /* Important for vertical align on mobile phones */
   }
 
-   /* Dropdown button */
-   .dropdown .dropbtn_resume {
+  /* Dropdown button */
+  .dropdown .dropbtn_resume {
     font-size: 24px;
     border: none;
     outline: none;
     color: white;
-    padding: none;
+    padding: 0px;
     background-color: inherit;
-    /*border-width:fit-content;*/
+    border-top-width: 110%;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
-   } 
+    margin-right: -5px;
+  }
+
+  .dropdown:hover .dropbtn_resume {
+    background-color: #04AA6D;
+    color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+   .dropdown-content_resume {
+    display: none;
+    position: absolute;
+    background-color: #999999;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 1;
+    max-width: 268px;
+  }
 
    .tooltip {
      position: relative;
