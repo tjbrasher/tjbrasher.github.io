@@ -79,9 +79,9 @@ h1 {
     border: none;
     outline: none;
     color: white;
-    padding: 10px 32px 10px;
+    padding: none;
     background-color: inherit;
-    border-top: none;
+    border: none;
     /*border-width:fit-content;*/
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
