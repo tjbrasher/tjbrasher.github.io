@@ -186,6 +186,7 @@ h1 {
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  cursor: pointer;
 }
 
 /* Add a green background color to navbar links on hover */
@@ -195,6 +196,7 @@ h1 {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  cursor: pointer;
 }
 
 /* Dropdown content (hidden by default) */
