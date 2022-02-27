@@ -183,7 +183,6 @@ h1 {
   position: relative;
 }
 
-
 .dropbtn_resume a:hover {
   color: black;
   border-top-left-radius: 10px;
@@ -192,7 +191,6 @@ h1 {
   border-bottom-right-radius: 10px;
   cursor: pointer;
 }
-
 
 /* Add a green background color to navbar links on hover */
 .dropdown:hover .dropbtn_resume {
@@ -255,6 +253,7 @@ h1 {
 .dropbtn_resume a:hover .dropdown-content {
   margin-top: -5px;
   margin-bottom: 0px;
+  cursor: pointer;
 }
 
 div span {
