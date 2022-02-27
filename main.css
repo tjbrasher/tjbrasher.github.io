@@ -15,7 +15,7 @@ h1 {
 }
 
 .line {
-  margin-top: 50px;
+  margin-top: 47.5px;
   border-top: #292929 solid;
 }
 
@@ -170,17 +170,21 @@ h1 {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 10px 32px 10px;
+  padding-top: 10px;
+  padding-bottom: 9px;
+  padding-left: 32px;
+  padding-right: 32px;
   text-decoration: none;
   font-size: 24px;
+  margin-bottom: -5px;
 }
 
 .dropbtn_resume {
   position: relative;
 }
 
+
 .dropbtn_resume a:hover {
-  background-color: #04AA6D;
   color: black;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -189,6 +193,7 @@ h1 {
   cursor: pointer;
 }
 
+
 /* Add a green background color to navbar links on hover */
 .dropdown:hover .dropbtn_resume {
   background-color: #04AA6D;
@@ -196,6 +201,7 @@ h1 {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  padding-bottom: 5px;
   cursor: pointer;
 }
 
@@ -214,7 +220,7 @@ h1 {
 }
 
 .resume .dropdown-content {
-  margin-top: -5px;
+  margin-top: 0px;
 }
 
 /* Links inside the dropdown */
@@ -246,6 +252,11 @@ h1 {
   display: block;
 }
 
+.dropbtn_resume a:hover .dropdown-content {
+  margin-top: -5px;
+  margin-bottom: 0px;
+}
+
 div span {
   position: absolute;
   bottom: 115%;
@@ -257,7 +268,7 @@ div span {
   visibility: hidden;
   background-color: #999999;
   color: #f2f2f2;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
   padding-top: 5px;
   padding-left: 7px;
