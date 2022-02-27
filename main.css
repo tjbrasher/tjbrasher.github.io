@@ -14,12 +14,18 @@ h1 {
     margin-left: 24px;
 }
 
+.line {
+  margin-top: 50px;
+  border-top: #292929 solid;
+}
+
 /* Add a black background color to the top navigation */
 .navbar {
     margin-top: -15px;
-    overflow: hidden;
-    border-bottom: solid #292929;
+    overflow: visible;
+    border-bottom: solid #292929;;
     border-top: fit-content;
+    z-index: 0;
   }
   
   /* Style the links inside the navigation bar */
@@ -54,8 +60,8 @@ h1 {
     border-top-right-radius: 10px;
   }
 
-/* The dropdown container */
-.dropdown {
+  /* The dropdown container */
+  .dropdown {
     float: left;
     overflow: hidden;
   }
@@ -72,77 +78,7 @@ h1 {
     border-width:fit-content;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
-  }
-
-  /* Dropdown button */
-  .dropdown .dropbtn_resume {
-    font-size: 24px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 0px;
-    background-color: inherit;
-    border-top-width: 110%;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-    margin-right: -5px;
-  }
-
-  .dropdown:hover .dropbtn_resume {
-    background-color: #04AA6D;
-    color: black;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-  }
-
-   .dropdown-content_resume {
-    display: none;
-    position: absolute;
-    background-color: #999999;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    border-radius: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    z-index: 1;
-    max-width: 268px;
-  }
-
-   .tooltip {
-     position: relative;
-     display: inline-block;
-   }
-
-   .tooltip .tooltiptext {
-     visibility: hidden;
-     width: auto;
-     bottom: 100%;
-     left: 50%;
-     margin-left:50%;
-     background-color: white;
-     color: black;
-     text-align: center;
-     padding: 5px 0;
-     border-radius: 5px;
-     position: absolute;
-     z-index: 1;
-   }
-
-   .tooltip:hover .tooltiptext {
-     visibility: visible;
-   }
-  
-   .tooltip .tooltiptext::after {
-    content: " ";
-    position: absolute;
-    top: 100%; /* At the bottom of the tooltip */
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: black transparent transparent transparent;
-  }
+  }  
 
   /* Add a green background color to navbar links on hover */
   .navbar a:hover {
@@ -204,6 +140,148 @@ h1 {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+
+
+/* ***Resume Dropdown Formatting*** */
+.dropdown {
+  float: left;
+  overflow: visible;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn_resume {
+  font-size: 24px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  border-top: solid #292929;
+  border-width:fit-content;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}  
+
+.dropbtn_resume a {
+  all: unset;
+}
+
+.dropbtn_resume a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 32px 10px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.dropbtn_resume {
+  position: relative;
+}
+
+.dropbtn_resume a:hover {
+  background-color: #04AA6D;
+  color: black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Add a green background color to navbar links on hover */
+.dropdown:hover .dropbtn_resume {
+  background-color: #04AA6D;
+  color: black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #999999;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  z-index: 1;
+  max-width: 268px;
+}
+
+.resume .dropdown-content {
+  margin-top: -5px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  word-wrap: break-word;
+  white-space: normal;
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-emphasis-style: bold;
+  font-weight: bold;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f2f2f2;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+div span {
+  position: absolute;
+  bottom: 115%;
+  left: 0%;
+  z-index: 5;
+}
+
+.tooltip div span {
+  visibility: hidden;
+  background-color: #999999;
+  color: #f2f2f2;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+}
+
+.dropbtn_resume:hover .tooltip div span {
+  visibility: visible;
+  overflow: visible;
+}
+
+.tooltip div span::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #999999 transparent transparent transparent;
+}
+
+
+/* Page animation formatting */
 
   @keyframes fadeIn {
     0% {
