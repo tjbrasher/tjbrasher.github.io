@@ -5,3 +5,13 @@
     color: white;
     padding-left: 30px;
 }
+
+.section_title a {
+    color: white;
+    text-decoration: none;
+}
+
+.section_title a:hover {
+    color: #04AA6D;
+    text-decoration: underline;
+}
