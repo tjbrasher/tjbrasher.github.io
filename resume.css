@@ -63,26 +63,22 @@
 #coursework {
     float: left;
     margin-top: 3px;
-    margin-bottom: 40px;
+    margin-bottom: 18px;
     font-size: 16px;
 }
 
 #honor_societies {
+    margin-top: 15px;
     font-size: 18px;
-    margin-top: -10px;
-    float: left;
+    margin-bottom: 3px;
 }
 
 #societies {
-    float: left;
-    margin-top: 3px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     font-size: 16px;
 }
 
 #work_title {
-    float: left;
-    margin-top: 5px;
     font-size: 28px;
     color: #04AA6D;
 }
