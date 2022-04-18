@@ -1,8 +1,53 @@
 @import url("main.css");
 
-.section_title {
-    font-weight: bold;
-    color: white;
-    padding-left: 30px;
+.about_me_body {
+    margin: auto;
 }
 
+.section_title {
+    font-weight: bold;
+    color: #04AA6D;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.divider_1 {
+    margin-top: -18px;
+    border-top: #292929 solid;
+    max-width: 56%;
+  }
+
+p {
+    font-size: 18px;
+    line-height: 160%;
+    color: white;
+    margin-top: 8px;
+    padding-left: 30px;
+    max-width: 55%;
+}
+
+.early_work {
+    font-weight: bold;
+    color: #04AA6D;
+    padding-left: 30px;
+    padding-top: 25px;
+}
+
+.recent_education {
+    font-weight: bold;
+    color: #04AA6D;
+    padding-left: 30px;
+    padding-top: 25px;
+}
+
+.future {
+    font-weight: bold;
+    color: #04AA6D;
+    padding-left: 30px;
+    padding-top: 25px;
+}
+
+.spacer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
