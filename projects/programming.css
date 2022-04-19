@@ -5,3 +5,40 @@
     color: white;
     padding-left: 30px;
 }
+
+.python {
+    font-weight: bold;
+    color: white;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.divider_1 {
+    margin-top: -10px;
+    border-top: #292929 solid;
+    margin-left: 25px;
+    max-width: 520px;
+}
+
+.purchBuilder {
+    font-weight: bold;
+    color: white;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.purchBuilder a{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding-left: 0px;
+    padding-top: 10px;
+}
+
+.purchBuilder a:hover{
+    font-weight: bold;
+    color: #04AA6D;
+    text-decoration: underline;
+    padding-left: 0px;
+    padding-top: 10px;
+}
